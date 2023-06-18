@@ -1,2 +1,0 @@
-const e=document.querySelector(".statList"),t=document.querySelector("#resultButton"),n=document.querySelector("#resultSection");e.addEventListener("click",(function(e){if("BUTTON"!==e.target.nodeName)return;const t=e.target.dataset.number;r+=Number(t);const n=e.target.textContent;c[n]?c[n]+=1:c[n]=1})),t.addEventListener("click",(function(){let e=Object.keys(c),t="";e.forEach((e=>t+=`${e} pressed ${c[e]} times. `)),console.log(t),n.innerHTML=`Result: ${r}. ${t}`,r=0,c={}}));let r=0,c={};
-//# sourceMappingURL=index.80b2b53e.js.map
